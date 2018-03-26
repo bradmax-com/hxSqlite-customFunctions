@@ -3,7 +3,7 @@ package bradmax.sys.db;
 import sys.db.ResultSet;
 
 @:buildXml('
-<set name="SQLITEDRIVER" value="${haxelib:sqlitedriver}" />
+<set name="SQLITEDRIVER" value="${haxelib:hxSqlite-customFunctions}" />
 
 <files id="haxe">
 <flag value="-I${SQLITEDRIVER}" />

@@ -1,0 +1,12 @@
+HXCPP_EXTERN_CLASS_ATTRIBUTES Dynamic _bradmax_sqlite_connect(String filename);
+HXCPP_EXTERN_CLASS_ATTRIBUTES Dynamic _bradmax_sqlite_request(Dynamic handle,String req);
+HXCPP_EXTERN_CLASS_ATTRIBUTES void    _bradmax_sqlite_close(Dynamic handle);
+HXCPP_EXTERN_CLASS_ATTRIBUTES int     _bradmax_sqlite_last_insert_id(Dynamic handle);
+HXCPP_EXTERN_CLASS_ATTRIBUTES int     _bradmax_sqlite_result_get_length(Dynamic handle);
+HXCPP_EXTERN_CLASS_ATTRIBUTES int     _bradmax_sqlite_result_get_nfields(Dynamic handle);
+HXCPP_EXTERN_CLASS_ATTRIBUTES Dynamic _bradmax_sqlite_result_next(Dynamic handle);
+HXCPP_EXTERN_CLASS_ATTRIBUTES String  _bradmax_sqlite_result_get(Dynamic handle,int i);
+HXCPP_EXTERN_CLASS_ATTRIBUTES int     _bradmax_sqlite_result_get_int(Dynamic handle, int i);
+HXCPP_EXTERN_CLASS_ATTRIBUTES int     _bradmax_sqlite_register_function(Dynamic handle, String name, int i, Dynamic ref);
+HXCPP_EXTERN_CLASS_ATTRIBUTES int     _bradmax_sqlite_register_aggregate(Dynamic handle, String name, int i, Dynamic ref);
+HXCPP_EXTERN_CLASS_ATTRIBUTES Float   _bradmax_sqlite_result_get_float(Dynamic handle,int i);

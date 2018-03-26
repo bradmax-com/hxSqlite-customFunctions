@@ -1,0 +1,23 @@
+<xml>
+
+<files id="bradmax_sqlite" dir="/Users/tkwiatek/Desktop/sqlitedriver/cpp/bradmax/libs/sqlite" >
+  <depend files="hxcpp-depends"/>
+  <depend name="/Users/tkwiatek/Desktop/sqlitedriver/cpp/bradmax/libs/sqlite/Build.xml" dateOnly="true" />
+  <depend name="/Users/tkwiatek/Desktop/sqlitedriver/cpp/bradmax/libs/sqlite/Import.h" />
+  <depend name="/Users/tkwiatek/Desktop/sqlitedriver/cpp/bradmax/libs/sqlite/Import.h" />
+  <depend name="${this_dir}/sqlite3.h" />
+  <cache value="true" asLibrary="true" />
+
+  <file name="sqlite3.c"/>
+  <file name="Sqlite.cpp"/>
+</files>
+
+
+
+<target id="haxe">
+  <files id="bradmax_sqlite"/>
+  <lib name="-lpthread" if="linux" unless="static_link" />
+</target>
+
+</xml>
+

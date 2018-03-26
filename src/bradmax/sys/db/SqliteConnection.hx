@@ -3,20 +3,20 @@ package bradmax.sys.db;
 import sys.db.ResultSet;
 
 @:buildXml('
-<set name="SQLITEDRIVER" value="${haxelib:hxSqlite-customFunctions}" />
+<set name="SQLITEDRIVER" value="${haxelib:hxsqlite_custom_functions}" />
 
 <files id="haxe">
 <flag value="-I${SQLITEDRIVER}" />
 
 <compilerflag value="-Iinclude"/>
-  <file name="${SQLITEDRIVER}/cpp/bradmax/libs/sqlite/Sqlite.cpp" >
-   <depend name="${SQLITEDRIVER}/cpp/bradmax/libs/sqlite/Import.h"/>
-   <depend name="${SQLITEDRIVER}/cpp/bradmax/libs/sqlite/sqlite3.h"/>
+  <file name="${SQLITEDRIVER}/../cpp/bradmax/libs/sqlite/Sqlite.cpp" >
+   <depend name="${SQLITEDRIVER}/../cpp/bradmax/libs/sqlite/Import.h"/>
+   <depend name="${SQLITEDRIVER}/../cpp/bradmax/libs/sqlite/sqlite3.h"/>
   </file>
 
 <compilerflag value="-Iinclude"/>
-  <file name="${SQLITEDRIVER}/cpp/bradmax/libs/sqlite/sqlite3.c" >
-   <depend name="${SQLITEDRIVER}/cpp/bradmax/libs/sqlite/sqlite3.h"/>
+  <file name="${SQLITEDRIVER}/../cpp/bradmax/libs/sqlite/sqlite3.c" >
+   <depend name="${SQLITEDRIVER}/../cpp/bradmax/libs/sqlite/sqlite3.h"/>
   </file>
 </files>
 
@@ -29,7 +29,7 @@ import sys.db.ResultSet;
 </files>
 ')
 
-@:cppInclude('cpp/bradmax/libs/sqlite/Import.h')
+@:cppInclude('../cpp/bradmax/libs/sqlite/Import.h')
 
 class SqliteConnection implements sys.db.Connection
 {
@@ -245,7 +245,7 @@ class UserFunction
 
 
 
-@:cppInclude('/Users/tkwiatek/Desktop/sqlitedriver/cpp/bradmax/libs/sqlite/Import.h')
+@:cppInclude('../cpp/bradmax/libs/sqlite/Import.h')
 private class SqliteResultSet implements ResultSet {
 
     public var length(get,null) : Int;

@@ -4,7 +4,7 @@
   "license": "MIT",
   "tags": [ "haxe", "hxcpp", "cpp", "sqlite", "custom function" ],
   "description": "This library adds custom function support to sqlite on CPP platforms",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "classPath": "src/",
   "releasenote": "",
   "contributors": ["bradmax"],

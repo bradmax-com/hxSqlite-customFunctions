@@ -1,10 +1,11 @@
 {
-  "name": "hxxqlite_custom_functions",
+  "name": "hxsqlite_custom_functions",
   "url": "http://bradmax.com/",
   "license": "MIT",
   "tags": [ "haxe", "hxcpp", "cpp", "sqlite", "custom function" ],
   "description": "This library adds custom function support to sqlite on CPP platforms",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "classPath": "src/",
   "releasenote": "",
   "contributors": ["bradmax"],
   "dependencies": {
